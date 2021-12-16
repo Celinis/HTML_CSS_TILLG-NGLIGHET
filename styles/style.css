@@ -149,12 +149,12 @@ header nav {
 @media (min-width: 1025px) {
   #gradient-img div.intro-square h2 {
     font-size: 46px;
-    margin: 40px 0;
+    margin: 50px 0;
   }
 }
 
 #gradient-img div.intro-square p {
-  font-size: 19px;
+  font-size: 18px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -167,7 +167,7 @@ header nav {
 
 @media (min-width: 1025px) {
   #gradient-img div.intro-square p {
-    font-size: 27px;
+    font-size: 25px;
   }
 }
 
@@ -259,7 +259,7 @@ article.content-wrapper div.text-wrapper .h3-p h3 {
 article.content-wrapper div.text-wrapper .h3-p p, article.content-wrapper div.text-wrapper .h3-p li {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: lighter;
 }
 
@@ -272,7 +272,7 @@ article.content-wrapper div.text-wrapper .h3-p p, article.content-wrapper div.te
     margin-bottom: 15px;
   }
   article.content-wrapper div.text-wrapper .h3-p p, article.content-wrapper div.text-wrapper .h3-p li {
-    font-size: 19px;
+    font-size: 17px;
   }
 }
 
@@ -291,7 +291,7 @@ article.content-wrapper div.text-wrapper .h3-p p, article.content-wrapper div.te
     width: 1020px;
   }
   article.content-wrapper div.text-wrapper .h3-p {
-    margin: 60px 10px;
+    margin: 40px 10px;
     width: 450px;
     height: 300px;
   }
@@ -300,11 +300,11 @@ article.content-wrapper div.text-wrapper .h3-p p, article.content-wrapper div.te
     font-size: 35px;
   }
   article.content-wrapper div.text-wrapper .h3-p p, article.content-wrapper div.text-wrapper .h3-p li {
-    font-size: 20px;
+    font-size: 19px;
   }
   article.content-wrapper div.text-wrapper div.p-links {
     width: 98%;
-    margin-top: 400px;
+    margin-top: 350px;
   }
 }
 

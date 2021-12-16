@@ -107,18 +107,18 @@ header {
             }
             @include for-large-screen {
                 font-size: 46px;
-                margin: 40px 0;
+                margin: 50px 0;
             }
         }
         p {
-            font-size: 19px;
+            font-size: 18px;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             @include for-small-screen {
                 font-size: 22px;
             }
             @include for-large-screen {
-                font-size: 27px;
+                font-size: 25px;
                 
             }
         }
@@ -177,7 +177,7 @@ article.content-wrapper {
             p, li {
                 font-size: 16px;
                 font-family: Arial, Helvetica, sans-serif;
-                font-size: 16px; 
+                font-size: 15px; 
                 font-weight: lighter;
             }
         }
@@ -189,7 +189,7 @@ article.content-wrapper {
                     margin-bottom: 15px;
                 }
                 p, li{
-                    font-size: 19px;
+                    font-size: 17px;
                 }
             }
         }
@@ -202,7 +202,7 @@ article.content-wrapper {
             }
 
             .h3-p {
-                margin: 60px 10px;
+                margin: 40px 10px;
                 width: 450px;
                 height: 300px;
                 h3 {
@@ -210,12 +210,12 @@ article.content-wrapper {
                     font-size: 35px;
                 }
                 p, li {
-                    font-size: 20px;
+                    font-size: 19px;
                 }
             }
             div.p-links {
                 width: 98%;
-                margin-top: 400px;
+                margin-top: 350px;
             }
         }
         
