@@ -32,10 +32,15 @@ header {
     }
     nav {
         display: none;
+        
+        
         @include for-small-screen {
+            background-color: $darkgrey;
+            box-shadow: none;
             width: 450px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             a {
                 color:white;
                 padding:10px;
@@ -43,9 +48,11 @@ header {
             }
             a.login {
                 color: $darkgrey;
-                padding:10px 25px;
+                padding:0 25px;
                 border-radius: 10px;
                 background-color: $yellow;
+                height: 40px;
+                text-align: center;
             }
             a:hover, a:active {
                 color:$yellow;
@@ -56,16 +63,6 @@ header {
             
         }
     }  
-
-    .fas, .fa-bars {
-        color: white;
-        margin: 10px;
-        font-size: 30px;
-
-        @include for-small-screen {
-            display: none;
-        }
-    }
 }
 
 #gradient-img {
@@ -82,24 +79,100 @@ header {
     justify-content: center;
     align-items: center;
 
-    div {
-        width: 50%;
-        
+    div.intro-square {
+        width: 80%;
+        @include for-small-screen {
+            width: 50%;
+        }
         h2 {
-            font-size: 40px;
+            font-size: 30px;
             margin: 30px 0;
             text-align: center;
             @include for-small-screen {
-                font-size: 50px;
+                font-size: 35px;
+                margin: 40px 0;
+            }
+            @include for-large-screen {
+                font-size: 46px;
                 margin: 40px 0;
             }
         }
         p {
-            font-size: 20px;
+            font-size: 19px;
             text-align: center;
             @include for-small-screen {
-                font-size: 30px;
+                font-size: 22px;
+            }
+            @include for-large-screen {
+                font-size: 27px;
             }
         }
     }
+}
+article.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    div.text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        div.p-intro {
+            padding-top: 30px;
+            width: 80%;
+            margin:10px;
+        }
+        .h3-p {
+            width: 80%;
+            margin: 15px 5px;
+            h3 {
+                font-size: 23px;
+                margin-bottom: 15px;;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        @include for-small-screen {
+            .h3-p {
+                margin: 25px 10px;
+                h3 {
+                    font-size: 27px;
+                    margin-bottom: 15px;;
+                }
+                p {
+                    font-size: 19px;
+                }
+            }
+        }
+        @include for-large-screen {
+            display:flex;
+            flex-flow: row wrap;
+            width: 940px;
+            div.p-intro {
+                width: 1020px;
+            }
+
+            .h3-p {
+                margin: 60px 10px;
+                width: 450px;
+                height: 300px;
+                h3 {
+                    margin-bottom: 25px;
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+        
+    }
+}
+
+footer.page-footer {
+    margin-top: 300px;
 }
