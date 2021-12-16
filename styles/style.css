@@ -256,7 +256,7 @@ article.content-wrapper div.text-wrapper .h3-p h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-article.content-wrapper div.text-wrapper .h3-p p {
+article.content-wrapper div.text-wrapper .h3-p p, article.content-wrapper div.text-wrapper .h3-p li {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -271,7 +271,7 @@ article.content-wrapper div.text-wrapper .h3-p p {
     font-size: 27px;
     margin-bottom: 15px;
   }
-  article.content-wrapper div.text-wrapper .h3-p p {
+  article.content-wrapper div.text-wrapper .h3-p p, article.content-wrapper div.text-wrapper .h3-p li {
     font-size: 19px;
   }
 }
@@ -299,12 +299,12 @@ article.content-wrapper div.text-wrapper .h3-p p {
     margin-bottom: 25px;
     font-size: 35px;
   }
-  article.content-wrapper div.text-wrapper .h3-p p {
+  article.content-wrapper div.text-wrapper .h3-p p, article.content-wrapper div.text-wrapper .h3-p li {
     font-size: 20px;
   }
   article.content-wrapper div.text-wrapper div.p-links {
     width: 98%;
-    margin-top: 150px;
+    margin-top: 400px;
   }
 }
 

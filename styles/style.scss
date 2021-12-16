@@ -174,7 +174,7 @@ article.content-wrapper {
                 margin-bottom: 15px;
                 font-family: Arial, Helvetica, sans-serif;
             }
-            p {
+            p, li {
                 font-size: 16px;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 16px; 
@@ -188,7 +188,7 @@ article.content-wrapper {
                     font-size: 27px;
                     margin-bottom: 15px;
                 }
-                p {
+                p, li{
                     font-size: 19px;
                 }
             }
@@ -209,13 +209,13 @@ article.content-wrapper {
                     margin-bottom: 25px;
                     font-size: 35px;
                 }
-                p {
+                p, li {
                     font-size: 20px;
                 }
             }
             div.p-links {
                 width: 98%;
-                margin-top: 150px;
+                margin-top: 400px;
             }
         }
         
