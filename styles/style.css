@@ -27,6 +27,12 @@ header div.header-wrapper {
 }
 
 header div.header-wrapper h1 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   font-size: 20px;
   text-decoration: none;
@@ -35,7 +41,7 @@ header div.header-wrapper h1 a {
 
 @media (min-width: 769px) {
   header div.header-wrapper h1 a {
-    font-size: 27px;
+    font-size: 24px;
   }
 }
 
@@ -63,6 +69,7 @@ header nav {
     color: white;
     padding: 10px;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
   }
   header nav a.login {
     color: #2D353D;
@@ -70,13 +77,24 @@ header nav {
     border-radius: 10px;
     background-color: #feea8b;
     height: 40px;
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header nav a:hover, header nav a:active {
     color: #feea8b;
   }
   header nav a.login:hover, header nav a.login:active {
-    background-color: #444C54;
+    background-color: #242b31;
+  }
+}
+
+@media (min-width: 769px) {
+  header i.small {
+    display: none;
   }
 }
 
@@ -105,6 +123,7 @@ header nav {
 
 #gradient-img div.intro-square {
   width: 80%;
+  margin-top: 170px;
 }
 
 @media (min-width: 769px) {
@@ -117,6 +136,7 @@ header nav {
   font-size: 30px;
   margin: 30px 0;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (min-width: 769px) {
@@ -136,6 +156,7 @@ header nav {
 #gradient-img div.intro-square p {
   font-size: 19px;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (min-width: 769px) {
@@ -151,6 +172,7 @@ header nav {
 }
 
 article.content-wrapper {
+  color: #2D353D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,9 +205,44 @@ article.content-wrapper div.text-wrapper {
 }
 
 article.content-wrapper div.text-wrapper div.p-intro {
+  font-family: Arial, Helvetica, sans-serif;
   padding-top: 30px;
   width: 80%;
   margin: 10px;
+}
+
+article.content-wrapper div.text-wrapper div.p-intro hr {
+  border-top: 1px solid #BABDC2;
+}
+
+article.content-wrapper div.text-wrapper div.p-links {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 150px;
+  background-color: #feea8b;
+  margin-top: 30px;
+  padding: 0 10%;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #2D353D;
+}
+
+article.content-wrapper div.text-wrapper div.p-links a {
+  color: #6f7377;
+}
+
+article.content-wrapper div.text-wrapper div.p-links a:hover {
+  color: #242b31;
+  text-decoration: underline;
 }
 
 article.content-wrapper div.text-wrapper .h3-p {
@@ -196,10 +253,14 @@ article.content-wrapper div.text-wrapper .h3-p {
 article.content-wrapper div.text-wrapper .h3-p h3 {
   font-size: 23px;
   margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 article.content-wrapper div.text-wrapper .h3-p p {
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
 }
 
 @media (min-width: 769px) {
@@ -236,23 +297,36 @@ article.content-wrapper div.text-wrapper .h3-p p {
   }
   article.content-wrapper div.text-wrapper .h3-p h3 {
     margin-bottom: 25px;
-    font-size: 32px;
+    font-size: 35px;
   }
   article.content-wrapper div.text-wrapper .h3-p p {
     font-size: 20px;
   }
+  article.content-wrapper div.text-wrapper div.p-links {
+    width: 98%;
+    margin-top: 150px;
+  }
 }
 
 footer.page-footer {
-  margin-top: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 70px;
   background-color: #2D353D;
 }
 
-footer.page-footer ul li a.text-lighten-3 {
-  color: #2D353D;
+footer.page-footer .container {
+  color: #feea8b;
+}
+
+footer.page-footer a {
+  color: #eaedf1;
+}
+
+footer.page-footer a:hover {
+  color: #feea8b;
 }
 
 footer.page-footer .footer-copyright {
-  background-color: #2D353D;
+  background-color: #242b31;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,11 +4,11 @@
 * {
     margin:0;
 }
-
+//---------------------------------------------HEADER---------------------------------------------------------
 header {
     width: 100%;
     height: 80px;
-    background-color: $darkgrey;
+    background-color: $darkgray;
 
     div.header-wrapper {
         height:80px;
@@ -18,24 +18,26 @@ header {
         margin: 0 35px;
         justify-content: space-between;
         
+        //LOGO TEXT---------------------------------------------------------------------------------------
         h1 {
             a {
+                display: flex;
+                align-items: center;
                 color: white;
                 font-size: 20px;
                 text-decoration: none;
                 font-family: 'Times New Roman', Times, serif;
                 @include for-small-screen {
-                    font-size: 27px;
+                    font-size: 24px;
                 }
             }
         }
     }
+    //NAVIGERING----------------------------------------------------------------------------------------
     nav {
         display: none;
-        
-        
         @include for-small-screen {
-            background-color: $darkgrey;
+            background-color: $darkgray;
             box-shadow: none;
             width: 450px;
             display: flex;
@@ -45,29 +47,37 @@ header {
                 color:white;
                 padding:10px;
                 text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
             }
             a.login {
-                color: $darkgrey;
+                color: $darkgray;
                 padding:0 25px;
                 border-radius: 10px;
                 background-color: $yellow;
                 height: 40px;
-                text-align: center;
+                display: flex;
+                align-items: center;
             }
             a:hover, a:active {
                 color:$yellow;
             }
             a.login:hover, a.login:active {
-                background-color: $lgray;
+                background-color: $darkergray;
             }
             
         }
-    }  
+    } 
+    i.small {
+        @include for-small-screen {
+            display: none;
+        }
+    }
 }
-
+//----------------------------------------------MAIN-----------------------------------------------------------------
+//GRADIENT BILD------------------------------------------------------------------------------------------------------
 #gradient-img {
     background-image: 
-    linear-gradient(to bottom, transparent, $gray), url(/assets/workingspace.jpg);
+    linear-gradient(to bottom, transparent, $darkgray), url(/assets/workingspace.jpg);
     max-width: 100%;
     height: 800px;
     background-size:cover;
@@ -79,8 +89,10 @@ header {
     justify-content: center;
     align-items: center;
 
+    //INTRO RUBRIK OCH TEXT -------------------------------------------------------------------------------------------
     div.intro-square {
         width: 80%;
+        margin-top: 170px;
         @include for-small-screen {
             width: 50%;
         }
@@ -88,6 +100,7 @@ header {
             font-size: 30px;
             margin: 30px 0;
             text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
             @include for-small-screen {
                 font-size: 35px;
                 margin: 40px 0;
@@ -100,16 +113,20 @@ header {
         p {
             font-size: 19px;
             text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
             @include for-small-screen {
                 font-size: 22px;
             }
             @include for-large-screen {
                 font-size: 27px;
+                
             }
         }
     }
 }
+//CONTENT -----------------------------------------------------------------------------------------------------
 article.content-wrapper {
+    color:$darkgray;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,9 +138,33 @@ article.content-wrapper {
         align-items: center;
         justify-content: center;
         div.p-intro {
+            font-family: Arial, Helvetica, sans-serif;
             padding-top: 30px;
             width: 80%;
             margin:10px;
+            hr {
+                border-top: 1px solid $gray;
+            }
+        }
+        div.p-links {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            height:150px;
+            background-color: $yellow;
+            margin-top: 30px;
+            padding: 0 10%;
+            padding-bottom: 20px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            color: $darkgray;
+            a {
+                color: $mediumdarkgray;
+            }
+            a:hover {
+                color: $darkergray;
+                text-decoration: underline;
+            }
         }
         .h3-p {
             width: 80%;
@@ -131,9 +172,13 @@ article.content-wrapper {
             h3 {
                 font-size: 23px;
                 margin-bottom: 15px;
+                font-family: Arial, Helvetica, sans-serif;
             }
             p {
                 font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px; 
+                font-weight: lighter;
             }
         }
         @include for-small-screen {
@@ -162,17 +207,35 @@ article.content-wrapper {
                 height: 300px;
                 h3 {
                     margin-bottom: 25px;
-                    font-size: 32px;
+                    font-size: 35px;
                 }
                 p {
                     font-size: 20px;
                 }
             }
+            div.p-links {
+                width: 98%;
+                margin-top: 150px;
+            }
         }
         
     }
 }
-
-// footer.page-footer {
-//     margin-top: 300px;
-// }
+//-------------------------------------------------FOOTER---------------------------------------------------------
+footer.page-footer {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+    background-color: $darkgray;
+    .container {
+        color: $yellow;
+    }
+    a {
+        color: $lightgray;
+    }
+    a:hover {
+        color: $yellow;
+    }
+    .footer-copyright {
+        background-color: $darkergray;
+    }
+}
